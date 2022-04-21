@@ -2,9 +2,9 @@ set guioptions=r   " only display right scroll
 set linespace=2
 
 try
-  set guifont=DejaVu\ sans\ mono:h16
-  colorscheme gruvbox
-  highlight EndOfBuffer gui=NONE guifg=bg guibg=bg
+    set guifont=DejaVu\ sans\ mono\ 14
+    colorscheme gruvbox
+    highlight EndOfBuffer gui=NONE guifg=bg guibg=bg
 catch
 endtry
 
