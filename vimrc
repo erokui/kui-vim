@@ -1,3 +1,38 @@
+"plugins
+call plug#begin()
+" The default plugin directory will be as follows:
+"   - Vim (Linux/macOS): '~/.vim/plugged'
+"   - Vim (Windows): '~/vimfiles/plugged'
+"   - Neovim (Linux/macOS/Windows): stdpath('data') . '/plugged'
+" You can specify a custom plugin directory by passing it as the argument
+"   - e.g. `call plug#begin('~/.vim/plugged')`
+"   - Avoid using standard Vim directory names like 'plugin'
+
+" Make sure you use single quotes
+
+Plug 'frazrepo/vim-rainbow'
+Plug 'jiangmiao/auto-pairs'
+Plug 'Yggdroot/indentLine'
+Plug 'vim-airline/vim-airline'
+Plug 'scrooloose/nerdtree'
+"Plug 'HonkW93/automatic-verilog'
+"Plug 'mg979/vim-visual-multi', {'branch': 'master'}
+
+" Plugin outside ~/.vim/plugged with post-update hook
+"Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+
+" Initialize plugin system
+call plug#end()
+
+let g:rainbow_active = 1
+let g:rainbow_ctermfgs = ['lightblue', 'lightgreen', 'yellow', 'red', 'magenta']
+
+let g:indentLine_char='┆' "縮進指示線符
+let g:indentLine_enabled = 1 "開啟縮進指示
+let g:indentLine_color_gui = '#A4E57E'
+
+map <F2> :NERDTreeToggle<CR>
+let NERDTreeWinSize=25
 "--------------
 " Settings
 "--------------
