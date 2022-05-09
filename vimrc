@@ -47,18 +47,23 @@ set noswapfile
 set hidden
 set nobomb            " no BOM(Byte Order Mark)
 set mouse=a
-
+"--------------
+" Theme
+"--------------
+syntax enable
+colorscheme monokai
+"color evening
+"hi LineNr cterm=bold ctermfg=DarkGrey
+"hi CursorLineNr cterm=bold ctermfg=Green ctermbg=NONE
 "--------------
 " Filetype and Encoding
 "--------------
 filetype on
 filetype indent on
 filetype plugin on
-
 " file encoding
 set encoding=utf-8
 scriptencoding utf-8
-
 "--------------
 " key mapping
 "--------------
